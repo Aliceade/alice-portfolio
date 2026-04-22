@@ -33,7 +33,7 @@ export default function Hero() {
 
           <div className="reveal reveal-d5" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24, paddingTop: 32, borderTop: "1px solid rgba(22,33,23,0.1)" }}>
             {[
-              { n: "5+",   l: "Years building" },
+              { n: "7+",   l: "Years building" },
               { n: "200+", l: "Product launches" },
               { n: "MSc",  l: "Computer Science" },
             ].map(({ n, l }) => (
