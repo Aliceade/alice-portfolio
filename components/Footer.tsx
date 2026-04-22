@@ -101,9 +101,9 @@ export default function Footer() {
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
               {[
                 
-                { label: "Book a call ↗",          href: "https://calendar.app.google/gfnjoVQnD3wYwxdE7", ext: true },
-                { label: "inkioweb.com ↗",         href: "https://inkioweb.com/", ext: true },
-                { label: "jobapay.ai ↗",           href: "https://jobapay.ai/", ext: true },
+                { label: "Book a call",          href: "https://calendar.app.google/gfnjoVQnD3wYwxdE7", ext: true },
+                { label: "inkioweb.com",         href: "https://inkioweb.com/", ext: true },
+                { label: "jobapay.ai",           href: "https://jobapay.ai/", ext: true },
                 { label: "alicearimoro@gmail.com", href: "mailto:alicearimoro@gmail.com", ext: false },
               ].map(({ label, href, ext }) => (
                 <a key={href} href={href} {...(ext ? { target: "_blank", rel: "noopener noreferrer" } : {})}
