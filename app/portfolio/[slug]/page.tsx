@@ -64,7 +64,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               </div>
               <div style={{ marginLeft: "auto" }}>
                 <a href={p.url} target="_blank" rel="noopener noreferrer" className="btn-coral btn-sm">
-                  View live site ↗
+                  View live site ↗&#xFE0E;
                 </a>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
                 {/* CTA */}
                 <a href={p.url} target="_blank" rel="noopener noreferrer" className="btn-coral" style={{ textAlign: "center", justifyContent: "center" }}>
-                  Visit live site ↗
+                  Visit live site ↗&#xFE0E;
                 </a>
                 <a href="https://calendar.app.google/gfnjoVQnD3wYwxdE7" target="_blank" rel="noopener noreferrer" className="btn-ghost" style={{ textAlign: "center", justifyContent: "center" }}>
                   Work with me
