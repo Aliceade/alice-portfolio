@@ -65,9 +65,10 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 </div>
               </div>
               <div style={{ marginLeft: "auto" }}>
-                <a href={p.url} target="_blank" rel="noopener noreferrer" className="btn-coral" style={{ textAlign: "center", justifyContent: "center", display: "inline-flex", alignItems: "center", gap: "6px" }}>
-                  Visit live site
-                  <span style={{ fontSize: "0.8em", transform: "translateY(-1px)" }}>↗&#xFE0E;</span>
+                <a href={p.url} target="_blank" rel="noopener noreferrer" className="btn-coral" style={{ textAlign: "center", justifyContent: "center" }}>
+
+                  Visit live site &nearr;
+
                 </a>
               </div>
             </div>
