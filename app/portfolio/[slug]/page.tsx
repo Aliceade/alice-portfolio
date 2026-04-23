@@ -193,6 +193,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
                 {/* CTA */}
                 <a href={p.url} target="_blank" rel="noopener noreferrer" className="btn-coral" style={{ textAlign: "center", justifyContent: "center" }}>
+                  Visit live site 
                   <ArrowUpRight size={14} strokeWidth={2.5} />
                 </a>
                 <a href="https://calendar.app.google/gfnjoVQnD3wYwxdE7" target="_blank" rel="noopener noreferrer" className="btn-ghost" style={{ textAlign: "center", justifyContent: "center" }}>
