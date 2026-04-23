@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react"; // <-- Added Import
 
 // Official SVG icons
 const icons = {
@@ -107,10 +108,11 @@ export default function Footer() {
                 { label: "alicearimoro@gmail.com", href: "mailto:alicearimoro@gmail.com", ext: false },
               ].map(({ label, href, ext }) => (
                 <a key={href} href={href} {...(ext ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                  style={{ fontSize: 14, color: "rgba(255,247,232,0.6)", textDecoration: "none", transition: "color 0.2s" }}
+                  style={{ fontSize: 14, color: "rgba(255,247,232,0.6)", textDecoration: "none", transition: "color 0.2s", display: "inline-flex"   /* <-- Added layout rules */ }}
                   onMouseEnter={e => (e.currentTarget.style.color = "var(--bg)")}
                   onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,247,232,0.6)")}>
                   {label}
+                  {ext && <ArrowUpRight size={14} strokeWidth={2} />}  {/* <-- Conditional arrow rendering */}
                 </a>
               ))}
             </div>
