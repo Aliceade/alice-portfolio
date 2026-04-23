@@ -3,7 +3,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { projects, getProject } from "@/lib/projects";
-
+import { ArrowUpRight } from "lucide-react";
 
 export async function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -65,10 +65,9 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 </div>
               </div>
               <div style={{ marginLeft: "auto" }}>
-                <a href={p.url} target="_blank" rel="noopener noreferrer" className="btn-coral" style={{ textAlign: "center", justifyContent: "center" }}>
-
-                  Visit live site &nearr;
-
+                <a href={p.url} target="_blank" rel="noopener noreferrer" className="btn-coral" style={{ textAlign: "center", justifyContent: "center", display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  Visit live site
+                  <ArrowUpRight size={14} strokeWidth={2.5} />
                 </a>
               </div>
             </div>
@@ -194,7 +193,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
                 {/* CTA */}
                 <a href={p.url} target="_blank" rel="noopener noreferrer" className="btn-coral" style={{ textAlign: "center", justifyContent: "center" }}>
-                  Visit live site ↗&#xFE0E;
+                  <ArrowUpRight size={14} strokeWidth={2.5} />
                 </a>
                 <a href="https://calendar.app.google/gfnjoVQnD3wYwxdE7" target="_blank" rel="noopener noreferrer" className="btn-ghost" style={{ textAlign: "center", justifyContent: "center" }}>
                   Work with me
