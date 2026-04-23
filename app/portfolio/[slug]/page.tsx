@@ -64,7 +64,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               </div>
               <div style={{ marginLeft: "auto" }}>
                 <a href={p.url} target="_blank" rel="noopener noreferrer" className="btn-coral btn-sm">
-                  View live site ↗&#xFE0E;
+                  View live site <span style={{ transition: "transform 0.2s" }}>↗</span>
                 </a>
               </div>
             </div>
