@@ -3,6 +3,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { projects, getProject } from "@/lib/projects";
+import { ArrowUpRight } from "lucide-react";
 
 export async function generateStaticParams() {
   return projects.map(p => ({ slug: p.slug }));
@@ -63,9 +64,10 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 </div>
               </div>
               <div style={{ marginLeft: "auto" }}>
-                <a href={p.url} target="_blank" rel="noopener noreferrer" className="btn-coral btn-sm">
-                  View live site <span style={{ transition: "transform 0.2s" }}>↗</span>
-                </a>
+                <a href={p.url} target="_blank" rel="noopener noreferrer" className="btn-coral" style={{ textAlign: "center", justifyContent: "center", display: "inline-flex", alignItems: "center", gap: "4px" }}>
+  Visit live site 
+  <ArrowUpRight size={16} strokeWidth={1.5} />
+</a>
               </div>
             </div>
           </div>
