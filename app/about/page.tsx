@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 const certifications = [
-  { name: "MSc Computer Science", org: "University of the People", year: "2025–26", type: "Degree" },
+  { name: "MSc Computer Science", org: "Woolf University", year: "2025–26", type: "Degree" },
   { name: "B.A. English Language & Literature", org: "University of Ibadan", year: "2019", type: "Degree" },
   { name: "Founder Institute Graduate", org: "Founder Institute Lagos", year: "2026", type: "Programme" },
   { name: "McKinsey Forward Programme", org: "McKinsey & Company", year: "2024", type: "Certificate" },
